@@ -1,0 +1,15 @@
+<nav>
+    <div class="logo"><span style="color: orange;">S</span>K</div>
+  
+    <div class="menu-toggle" (click)="toggleMenu()">☰</div>
+  
+    <ul class="nav-links" [ngClass]="{ 'active': isMenuOpen }">
+      <li><a href="#Home" (click)="toggleMenu()">Home</a></li>
+      <li><a href="#About-us" (click)="toggleMenu()">About us</a></li>
+      <li><a href="#Services" (click)="toggleMenu()">Services</a></li>
+      <li><a href="#Contact" (click)="toggleMenu()">Contact</a></li>
+    </ul>
+  
+    <div class="login"><button><a href="#Contact">Log in</a></button></div>
+  </nav>
+  
