@@ -60,8 +60,6 @@
     }
 
     & .pic{
-        
-        
         display: flex;
         justify-content: center;
         height: 550px;
@@ -81,7 +79,7 @@
         & img{
         border-radius: 5%;
         height: 550px;
-        width: 500px;
+        width: 450px;
     }
 }
 
@@ -111,7 +109,7 @@
             & h1{
               font-size: larger;
               color: #c9c8c8;
-              line-height: 35px;
+              line-height: 10px;
             }
 
             & p{
@@ -119,5 +117,70 @@
                 color: #858585;
             }
         }
+    }
+}
+
+.logo-dn{
+    display: none;
+}
+
+@media screen and (max-width: 760px) {
+    #About-us{
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+        height: auto;
+        padding: 255px;
+        flex-direction: column;
+        align-items: center;
+        width: 1030px;
+
+        & .Paragraph{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            /* align-items: center; */
+            text-align: left;
+            /* padding: 0px 20px; */
+            /* gap: 200px; */
+            margin-top: 50px;
+        }
+
+        & h1, h2{
+            font-size:35px;
+            margin-bottom: 10px;
+        }
+
+        & p{
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        & button{
+            width: 180px;
+            height: 50px;
+            font-size: 14px;
+        }
+
+        & .pic{
+            width: 450px;
+            height: 550px;
+            border-radius: 5%;
+            margin-bottom: 70px;
+            margin-top: 100px;
+
+            & img{
+                width: 450px;
+                height: 550px;
+                object-fit: cover;
+            }
+        }
+    }
+    
+    .logo-dn{
+        display: flex;
+        flex-direction: row;
+        width: 50px;
+        height: 58.5px;
     }
 }

@@ -6,3 +6,17 @@ html, body, #app {
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+@media screen and (max-width: 680px) {
+
+    *{
+        box-sizing: border-box;
+        
+    }
+    body {
+        font-size: 14px;
+        width: 100%;
+    }
+    
+}

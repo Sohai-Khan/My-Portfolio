@@ -83,6 +83,7 @@ nav {
       flex-direction: column;
       align-items: flex-start;
       padding: 10px 20px;
+      height: 100px;
 
       & ul{
         display: flex;
@@ -101,7 +102,7 @@ nav {
       position: absolute;
       right: 55px;
       /* top: 15px; */
-      z-index: 20;
+      z-index: 10;
     }
   
     /* Hide nav links by default on small screens */
@@ -126,7 +127,7 @@ nav {
   
     .nav-links li a {
       text-align: center;
-      padding: 2px;
+      padding: 6px;
       margin-top: 80px;
       /* background-color: rgb(41, 2, 77); */
       display: block;

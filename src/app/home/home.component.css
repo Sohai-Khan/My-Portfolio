@@ -6,6 +6,7 @@
     padding: 250px;
     flex-wrap: nowrap;
     background-color: rgb(16, 0, 37);
+    
 
     & h1, h2{
         /* text-shadow: 1px 2px yellow; */
@@ -52,12 +53,13 @@
 
     & .para-img{
         display: flex;
-        flex-direction: row;
+        /* flex-direction: row; */
         justify-content: space-around;
         align-items: center;
         /* text-align: center; */
         padding: 0px 20px;
         gap: 200px;
+        flex-wrap: wrap-reverse;
 
     }
 
@@ -87,11 +89,12 @@
             & h1{
               font-size: small;
               color: #ff0000;
-              line-height: 8px;
-              padding: 1px;
+              line-height: -18px;
+              padding: -10px;
+              margin-top: 20px;
             }
 
-            & p{
+            & h4{
                 font-size: medium;
                 font-weight: bold;
                 color: #858585;
@@ -143,7 +146,8 @@
         border: 3px solid rgba(128, 128, 128, 0.5);
         box-shadow: 0 0 10px rgb(1, 95, 83);
         transition: transform 0.3s;
-
+        width: 500px;
+        height: 500px;
         &:hover{
             transform: scale(1.05);
         }
@@ -217,15 +221,19 @@
 
 @media screen and (max-width: 768px) {
     main {
+      display: flex;
       flex-direction: column;
+      justify-content: space-between;
       align-items: center;
-      width: fit-content;
+      width: 1030px;
     }
   
     .pic img {
-      width: 300px;
-      height: auto;
+      width: 200px;
+      height: 350px;
+      /* height: auto; */
       margin-bottom: 20px;
+      margin-top: 40px;
     }
   
     .Paragraph {
@@ -258,12 +266,19 @@
     }
 
     .para-img{
-        display: flex;
-                flex-direction: column-reverse;
-                justify-content: space-between;
-                align-items: center;
-                padding: 0px 20px;
-                gap: 159px;
+       display: flex;
+       flex-direction: column-reverse;
+       justify-content: space-between;
+       align-items: center;
+       padding: 0px 20px;
+       gap: 109px;
+
+       & p{
+        text-align: left;
+        /*padding: 0px 20px;*/
+        margin-top: 10px;
+        /*margin-bottom: 10px;*/
+    }
 
     }
   }
