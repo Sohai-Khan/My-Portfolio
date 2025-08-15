@@ -2,7 +2,11 @@
 html, body, #app {
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: auto;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
@@ -17,6 +21,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     body {
         font-size: 14px;
         width: 100%;
+    }
+
+    #app {
+        width: 100%;
+        height: 100%;
+    }
+
+    .html, body {
+        width: fit-content;
+        height: 100%;
     }
     
 }

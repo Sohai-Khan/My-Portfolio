@@ -1,5 +1,14 @@
 <app-navbar></app-navbar>
-<app-home></app-home>
-<app-about></app-about>
-<app-services></app-services>
-<app-contact></app-contact>
+<button routerLink="/home" routerLinkActive="active">Go to Home</button>
+<button routerLink="/about" routerLinkActive="active">Go to About</button>
+<button routerLink="/services" routerLinkActive="active">Go to Services</button>
+<button routerLink="/contact" routerLinkActive="active" >Go to Contact</button>
+
+<main>
+  <section id="Home"></section>
+  <section id="About"></section>
+  <section id="Services"></section>
+  <section id="Contact"></section>
+</main>
+
+<router-outlet></router-outlet> 

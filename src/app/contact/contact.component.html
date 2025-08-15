@@ -1,14 +1,18 @@
 <!-- Contact --> 
 
-<section section id="Contact"   class="reveal">
+<section section id="Contact"   class="reveal" class="Contact">
 
     <h3>Contact</h3>  
     <div class="contact" id="contactForm">
 
-      <div class="pic"><img style="width: 480px; height: 600px;" src="assets/contact-p.jpg" alt=""></div>
+      <div class="pic">
+        <h2>Every new friend <br> is a new adventure</h2>
+        <p>Let's get connect</p>
+        </div>
 
         <div class="contact-pg">
             <h1>Contact <span>me</span></h1>
+            <h1>Login</h1>
             <p>Have a project in mind or just want to say hello? I'd love to hear from you!</p>
             <form action="" id ="form">
                 <input type="text" id="name" placeholder="Name:" required>
@@ -23,3 +27,19 @@
         </div>
     </div>
 </section>
+
+
+<div class="responsive">
+
+    <form action="" id ="form">
+        <h1>Login</h1>
+        <p>Have a project in mind or just want to say hello? I'd love to hear from you!</p>
+        <input type="text" id="name" placeholder="Name:" required>
+        <input type="text" id="phone" placeholder="Phone:" required>
+        <input type="email" id="email" placeholder="Email:" required>
+        <input type="text" id="subject" placeholder="Subject:" required>
+        <textarea name="" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+        <button type="submit" id="submit"><a href="mailto:someone@example.com">Send</a></button>
+        <div class="message" id="successMessage" style="display: none;">Thank you, We will get back there</div>
+    </form> 
+</div>

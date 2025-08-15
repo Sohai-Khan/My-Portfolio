@@ -50,6 +50,7 @@ nav {
     color: white;
     text-decoration: none;
     padding: 0px 50px;
+    width: 10px;
   }
   
   .nav-links li a:hover {
@@ -80,10 +81,22 @@ nav {
      ========================= */
   @media screen and (max-width: 768px) {
     nav {
+      display: flex;
       flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
       align-items: flex-start;
       padding: 10px 20px;
       height: 100px;
+
+      & .logo {
+      margin-left: 15px;
+      margin-right: 0px;
+      width: 75px;
+      height: 75px;
+      font-size: 2rem;
+      border-radius: 50%;
+    }
 
       & ul{
         display: flex;
@@ -95,6 +108,8 @@ nav {
         margin-right: 7px;
       }
     }
+
+
   
     /* Show the toggler on small screens */
     .menu-toggle {
@@ -132,6 +147,8 @@ nav {
       /* background-color: rgb(41, 2, 77); */
       display: block;
       margin-bottom: 30px;
+      font-size: 1.5rem;
+      width: fit-content;
     }
   
     /* Adjust login */
